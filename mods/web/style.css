@@ -74,3 +74,15 @@ h1 {
 .todoListSpace {
     grid-area: todoListSpace
 }
+
+.mainImg {  
+    object-fit: cover;  
+    width: 320px;  
+    height: 180px;
+}
+
+.button { 
+    text-align:center;
+    display:block;
+    padding: 1em;
+}
