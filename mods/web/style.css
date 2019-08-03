@@ -32,12 +32,10 @@ h1 {
 }
 
 .module_container {
-    grid-area: content;
-    display: grid;
-    grid-template-rows: 3.2rem;
-    grid-template-columns: 1fr;
-    padding: 3em;
-    grid-template-areas:
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
     "headerSpace headerSpace addTaskSpace"
     "todoListSpace todoListSpace todoListSpace"
     "todoListSpace todoListSpace todoListSpace"
