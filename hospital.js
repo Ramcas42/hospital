@@ -5,7 +5,7 @@ function Hospital(app) {
 
   if (!(this instanceof Hospital)) { return new Hospital(app); }
 
-  Todo.super_.call(this);
+  Hospital.super_.call(this);
 
   this.app             = app;
 
@@ -17,6 +17,35 @@ function Hospital(app) {
 
 module.exports = Hospital;
 util.inherits(Hospital, ModTemplate);
+
+
+
+
+
+
+/////////////////////////
+// Handle Web Requests //
+/////////////////////////
+Hospital.prototype.webServer = function webServer(app, expressapp) {
+
+  var reddit_self = this;
+
+  expressapp.get('/hospital/', function (req, res) {
+    res.sendFile(__dirname + '/web/index.html');
+    return;
+  });
+  expressapp.get('/hospital/style.css', function (req, res) {
+    res.sendFile(__dirname + '/web/style.css');
+    return;
+  });
+  expressapp.get('/hospital/script.js', function (req, res) {
+    res.sendFile(__dirname + '/web/script.js');
+    return;
+  });
+
+}
+
+
 
 
 
