@@ -4,83 +4,33 @@ body {
     padding:0px;
     margin:0px;
 }
-
 h1 {
     margin: 0em;
 }
 
-.container {
-    display: grid;
-    grid-template-rows: 3.1rem auto;
-    grid-template-areas:
-    "header"
-    "content"
+
+.splash {
+
 }
 
-.header {
-    grid-area: header;
-    border-bottom: 1px solid #a5a5a5;
-    font-size:2em;
+.splash_image_container {
+
 }
 
-.logo {
-    width: 35px;
-    margin-top: 10px;
-    margin-left: 1.3em;
-    margin-right: 0.35em;
-    float: left;
-}
-
-.module_container {
-    display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-    "headerSpace headerSpace addTaskSpace"
-    "todoListSpace todoListSpace todoListSpace"
-    "todoListSpace todoListSpace todoListSpace"
-}
-
-.task_container {
-    display: flex;
-    align-items: center;
-}
-
-.task_checkbox {
-    margin-right: 2em;
-}
-
-.task {
-    font-size: 1.25em;
-}
-
-.module_label {
-    font-family:Georgia;
-    padding-top:5px;
-    font-size:1.2em;
-    color:#444;
-}
-
-.headerSpace {
-    grid-area: headerSpace
-}
-
-.addTaskSpace {
-    grid-area: addTaskSpace
-}
-
-.todoListSpace {
-    grid-area: todoListSpace
-}
-
-.mainImg {  
+.splash_image {
     object-fit: cover;  
     width: 320px;  
     height: 180px;
 }
 
-.button { 
+.splash_buttons_container {
+
+}
+
+.splash_button {
     text-align:center;
     display:block;
     padding: 1em;
 }
+
+
