@@ -42,6 +42,10 @@ Hospital.prototype.webServer = function webServer(app, expressapp) {
     res.sendFile(__dirname + '/web/script.js');
     return;
   });
+  expressapp.get('/hospital/pe-flag-min.jpg', function (req, res) {
+    res.sendFile(__dirname + '/web/img/pe-flag-min.jpg');
+    return;
+  });
 
 }
 
