@@ -62,7 +62,7 @@ h1 {
 @media only screen and (max-width: 1024px) {
     .button{
         display:block;
-        margin: 0.3em;
+        margin: 2em;
         width: 50%;
         margin-left: 25%;
         margin-right: 25%;
@@ -70,7 +70,6 @@ h1 {
         background: #404040;
         color: #ffffff !important;
         font-weight: 100;
-        padding: 20px;
         text-transform: uppercase;
         border-radius: 6px;
         transition: all 0.3s ease 0s;
