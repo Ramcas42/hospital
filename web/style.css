@@ -33,30 +33,45 @@ h1 {
     }
     }
 
-.button{
-    display:block;
-    padding:0.5em;
-    margin: 0.3em;
-    width: 30%;
-    margin-left: 35%;
-    margin-right: 50%;
-}
-
-@media only screen and (max-width: 1024px) {
-    .button{
-        display:block;
-        padding:0.5em;
-        margin: 0.3em;
-        width: 50%;
-        margin-left: 25%;
-        margin-right: 25%
-    }
-
 .splash_buttons_container {
     text-align:center;
     padding: 1em;
 }
 
 .container {
-    border: 2px solid black; /* Temp */ 
+
 }
+
+
+.button{
+    display:block;
+    margin: 2em;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 50%;
+    border: none;
+    background: #404040;
+    color: #ffffff !important;
+    font-weight: 100;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    transition: all 0.3s ease 0s;
+}
+
+@media only screen and (max-width: 1024px) {
+    .button{
+        display:block;
+        margin: 0.3em;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        border: none;
+        background: #404040;
+        color: #ffffff !important;
+        font-weight: 100;
+        padding: 20px;
+        text-transform: uppercase;
+        border-radius: 6px;
+        transition: all 0.3s ease 0s;
+    }
