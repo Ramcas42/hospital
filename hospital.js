@@ -51,7 +51,30 @@ Hospital.prototype.webServer = function webServer(app, expressapp) {
 
 }
 
+Hospital.prototype.newProfile = function newProfile() {
 
+  let profile = {};
+
+  profile.fist_name  = "";
+  profile.last_name = "";
+  profile.phone = "";
+  profile.email = "";
+  profile.birthday_year = "";
+  profile.birthday_month = "";
+  profile.birthday_day = "";
+  profile.id = "";
+  profile.address = "";
+  profile.gender="";
+
+  return profile;
+
+}
+Hospital.prototype.saveProfile = function saveProfile() {
+
+  this.app.options.profile = this.profile;
+  this.app.storage.saveOptions();
+
+}
 
 
 
