@@ -19,10 +19,6 @@ module.exports = Hospital;
 util.inherits(Hospital, ModTemplate);
 
 
-
-
-
-
 /////////////////////////
 // Handle Web Requests //
 /////////////////////////
@@ -52,9 +48,52 @@ Hospital.prototype.webServer = function webServer(app, expressapp) {
 }
 
 
+/////////////////////////
+//      Profile        //
+/////////////////////////
+
+Hospital.prototype.initialize = function initialize() {
+
+  if (this.app.options.profile == undefined) {
+
+    this.app.options.profile = this.newProfile();
+
+    this.app.options.profile.name = "Recc42";
+    this.app.options.profile.email = "recc42@saito.tech";
+
+    this.app.storage.saveOptions();
+  }
+
+}
 
 
+Hospital.prototype.newProfile = function newProfile() {
 
+  let profile = {};
+
+  profile.fist_name  = "";
+  profile.last_name = "";
+  profile.phone = "";
+  profile.email = "";
+  profile.birthday_year = "";
+  profile.birthday_month = "";
+  profile.birthday_day = "";
+  profile.id = "";
+  profile.address = "";
+  profile.gender="";
+  profile.appointments = [];
+
+  return profile;
+
+}
+Hospital.prototype.saveProfile = function saveProfile() {
+
+  this.app.options.profile = this.profile;
+  this.app.storage.saveOptions();
+
+}
+
+// END PROFILE //
 
 
 Hospital.prototype.onConfirmation = function onConfirmation(blk, tx, conf, app) {
