@@ -22,6 +22,7 @@
 
     <div class="container">
 
+
       <div class="splash" id="splash">
 
 	<div class="splash_image_container">
@@ -34,6 +35,295 @@
         </div>
 
       </div>
+
+
+<style>
+
+.appointment1Container {
+  width: 100vw;
+  border: 1px solid black;
+  display: grid;
+  grid-template-rows: 2.0rem 2.0rem 2.0rem 2.0rem 2.0rem;
+  grid-template-columns: 5rem auto;
+  grid-template-areas:
+    "label_name    input_name"
+    "label_id      input_id"
+    "label_dob     input_dob"
+    "label_phone   input_phone"
+    "label_address input_address"
+  ;
+
+.label_name {
+  grid-area: label_name;
+  float:left;
+}
+.input_name {
+  grid-area: input_name;
+  float:left;
+}
+.label_id {
+  grid-area: label_id;
+  float:left;
+}
+.input_id {
+  grid-area: input_id;
+  float:left;
+}
+.label_dob {
+  grid-area: label_dob;
+  float:left;
+}
+.input_dob {
+  grid-area: input_dob;
+  float:left;
+}
+.label_address {
+  grid-area: label_address;
+  float:left;
+}
+.input_address {
+  grid-area: input_address;
+  float:left;
+}
+.label_phone {
+  grid-area: label_phone;
+  float:left;
+}
+.input_phone {
+  grid-area: input_phone;
+  float:left;
+}
+
+</style>
+
+
+<p></p>
+
+
+      <div class="appointment1" id="appointment1" style="max-width:500px;margin-left:auto;margin-right:auto">
+
+	<div class="appointment1Container">
+
+	  <div class="label_name">NAME: </div>
+	  <div class="input_name">
+ 	    <input type="text" name="name_first" />
+	    <input type="text" name="name_family" />
+	  </div>
+
+	  <div class="label_id">ID #: </div>
+	  <div class="input_id">
+	    <input type="text" name="input_id" />
+	  </div>
+
+
+	  <div class="label_dob">D.O.B: </div>
+	  <div class="input_dob">
+
+	    <select name="dob_year">
+	      <option value="1950" >1950</option>
+	      <option value="1951" >1951</option>
+	      <option value="1952" >1952</option>
+	      <option value="1953" >1953</option>
+	      <option value="1954" >1954</option>
+	      <option value="1955" >1955</option>
+	      <option value="1956" >1956</option>
+	      <option value="1957" >1957</option>
+	      <option value="1958" >1958</option>
+	      <option value="1959" >1959</option>
+	    </select>
+
+	    <select name="dob_month">
+	      <option value="01" >01</option>
+	      <option value="02" >02</option>
+	      <option value="03" >03</option>
+	      <option value="04" >04</option>
+	      <option value="05" >05</option>
+	      <option value="06" >06</option>
+	      <option value="07" >07</option>
+	      <option value="08" >08</option>
+	      <option value="09" >09</option>
+	      <option value="10" >10</option>
+	      <option value="11" >11</option>
+	      <option value="12" >12</option>
+	    </select>
+
+  	    <select name="dob_day">
+	      <option value="01" >01</option>
+	      <option value="02" >02</option>
+	      <option value="03" >03</option>
+	      <option value="04" >04</option>
+	      <option value="05" >05</option>
+	      <option value="06" >06</option>
+	      <option value="07" >07</option>
+	      <option value="08" >08</option>
+	      <option value="09" >09</option>
+	      <option value="10" >10</option>
+	      <option value="11" >11</option>
+	      <option value="12" >12</option>
+	      <option value="13" >13</option>
+	      <option value="14" >14</option>
+	      <option value="15" >15</option>
+	      <option value="16" >16</option>
+	      <option value="17" >17</option>
+	      <option value="18" >18</option>
+	      <option value="19" >19</option>
+	      <option value="20" >20</option>
+	      <option value="21" >21</option>
+	      <option value="22" >22</option>
+	      <option value="23" >23</option>
+	      <option value="24" >24</option>
+	      <option value="25" >25</option>
+	      <option value="26" >26</option>
+	      <option value="27" >27</option>
+	      <option value="28" >28</option>
+	      <option value="29" >29</option>
+	      <option value="30" >30</option>
+	      <option value="31" >31</option>
+	    </select>
+
+	  </div>
+
+
+	  <div class="label_phone">PHONE: </div>
+	  <div class="input_phone">
+	    <input type="text" name="phone_area" />
+	    <input type="text" name="phone_number" />
+	  </div>
+
+	  <div class="label_address">ADDRESS: </div>
+	  <div class="input_address">
+ 	    <textarea name="address"></textarea>
+	  </div>
+
+          <button class="button">Confirm</button>
+
+	</div>
+
+
+      </div>
+
+
+
+      <p></p>
+
+
+
+      <div class="appointment2" id="appointment2" style="max-width:500px;margin-left:auto;margin-right:auto">
+	<h2>Make Appointment</h2>
+
+	<p></p>
+
+	
+	<label for="name_first">Name: </label>
+	<input type="text" name="name_first" />
+	<input type="text" name="name_family" />
+
+	<p></p>
+
+	<label for="id">ID#:</label>
+	<input type="text" name="id" />
+
+	<p></p>
+
+	<label for="dob_year">D.O.B: </label>
+	<select name="dob_year">
+	  <option value="1950" >1950</option>
+	  <option value="1951" >1951</option>
+	  <option value="1952" >1952</option>
+	  <option value="1953" >1953</option>
+	  <option value="1954" >1954</option>
+	  <option value="1955" >1955</option>
+	  <option value="1956" >1956</option>
+	  <option value="1957" >1957</option>
+	  <option value="1958" >1958</option>
+	  <option value="1959" >1959</option>
+	</select>
+
+	<select name="dob_month">
+	  <option value="01" >01</option>
+	  <option value="02" >02</option>
+	  <option value="03" >03</option>
+	  <option value="04" >04</option>
+	  <option value="05" >05</option>
+	  <option value="06" >06</option>
+	  <option value="07" >07</option>
+	  <option value="08" >08</option>
+	  <option value="09" >09</option>
+	  <option value="10" >10</option>
+	  <option value="11" >11</option>
+	  <option value="12" >12</option>
+	</select>
+
+	<select name="dob_day">
+	  <option value="01" >01</option>
+	  <option value="02" >02</option>
+	  <option value="03" >03</option>
+	  <option value="04" >04</option>
+	  <option value="05" >05</option>
+	  <option value="06" >06</option>
+	  <option value="07" >07</option>
+	  <option value="08" >08</option>
+	  <option value="09" >09</option>
+	  <option value="10" >10</option>
+	  <option value="11" >11</option>
+	  <option value="12" >12</option>
+	</select>
+
+	<p></p>
+
+	<alabel for="address">Address: </label>
+	<input type="text" name="address_street" />
+	<select name="address_city">
+	  <option value="01" >01</option>
+	  <option value="02" >02</option>
+	  <option value="03" >03</option>
+	  <option value="04" >04</option>
+	  <option value="05" >05</option>
+	  <option value="06" >06</option>
+	  <option value="07" >07</option>
+	  <option value="08" >08</option>
+	  <option value="09" >09</option>
+	  <option value="10" >10</option>
+	  <option value="11" >11</option>
+	  <option value="12" >12</option>
+	</select>
+
+
+	<select name="address_province">
+	  <option value="01" >01</option>
+	  <option value="02" >02</option>
+	  <option value="03" >03</option>
+	  <option value="04" >04</option>
+	  <option value="05" >05</option>
+	  <option value="06" >06</option>
+	  <option value="07" >07</option>
+	  <option value="08" >08</option>
+	  <option value="09" >09</option>
+	  <option value="10" >10</option>
+	  <option value="11" >11</option>
+	  <option value="12" >12</option>
+	</select>
+
+
+	<input type="text" name="address_postal" />
+
+	<p></p>
+
+	<label for="phone_area">Phone:</label>
+	<input type="text" name="phone_area" />
+	<input type="text" name="phone_number" />
+
+	<p></p>
+
+        <button class="button">Confirm</button>
+
+      </div>
+
+
+
+
+
+
 
     </div>
 

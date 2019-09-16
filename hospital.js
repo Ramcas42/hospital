@@ -42,7 +42,7 @@ Hospital.prototype.webServer = function webServer(app, expressapp) {
     res.sendFile(__dirname + '/web/script.js');
     return;
   });
-  expressapp.get('/hostipal/img/:imagefile',  (req, res) => {
+  expressapp.get('/hospital/img/:imagefile',  (req, res) => {
     var imgf = '/web/img/'+req.params.imagefile;
     if (imgf.indexOf("\/") != false) { return; }
     res.sendFile(__dirname + imgf);
