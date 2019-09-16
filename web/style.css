@@ -16,6 +16,11 @@ h1 {
     flex-wrap: wrap;
 }
 
+.col-20 {
+    -ms-flex: 20%; /* IE10 */
+    flex: 20%;
+}
+
 .col-25 {
     -ms-flex: 25%; /* IE10 */
     flex: 25%;
@@ -24,6 +29,20 @@ h1 {
 .col-50 {
     -ms-flex: 50%; /* IE10 */
     flex: 50%;
+}
+
+.col-50 > input[type=text] {
+    width: 98%;
+}
+
+.col-75 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+}
+
+.col-80 {
+    -ms-flex: 80%; /* IE10 */
+    flex: 80%;
 }
 
 .splash {
@@ -49,27 +68,31 @@ h1 {
 }
 
 .container {
-    border: 1px solid black;
-    padding: 10px;
+    padding: 1rem;
     display: grid;
     grid-gap: 0.5em;
 }
 
-.appointment1 {
+.appointment {
     display: grid;
     grid-gap: 0.75em;
     margin: auto;
     /* max-width: 30vw; */
-    width: 40vw;
+    width: 50vw;
 }
 
 select {
     height: 2.5em;
     width: 100%;
+    border: 1px solid lightgrey;
 }
 
 .input_dob {
     display: flex;
+}
+
+.label {
+    margin-bottom: 0.5em;
 }
 
 
@@ -77,6 +100,8 @@ input[type=text], input[type=number] {
     width: 100%;
     font-size: 1em;
     padding: 0.3em;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
 }
 
 textarea {
@@ -102,22 +127,20 @@ textarea {
 
 @media only screen and (max-width: 1024px) {
     .splash_image {
-        width: 80%;
+        width: 35%;
         height: auto;
     }
 
-    .button{
-        display:block;
-        margin: 2em;
-        width: 50%;
-        margin-left: 25%;
-        margin-right: 25%;
-        border: none;
-        background: #404040;
-        color: #ffffff !important;
-        font-weight: 100;
-        text-transform: uppercase;
-        border-radius: 6px;
-        transition: all 0.3s ease 0s;
+    .appointment {
+        margin: unset;
+        width: unset;
+    }
+
+    input[type=text], input[type=number] {
+        padding: 0.6em;
+    }
+
+    select {
+        height: 3em;
     }
 }
